@@ -1,6 +1,6 @@
 # Makefile for Django Messaging App
 
-.PHONY: help build up build-up down clean
+.PHONY: help build up build-up down
 
 help:
 	@echo "Available commands:"
