@@ -1,0 +1,157 @@
+2024-04-03 22:10:07,958 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:10:35,666 (WARNING)- orders.views- Tried to cancel already cancelled order: 20
+2024-04-03 22:10:35,667 (WARNING)- django.request- Bad Request: /api/v1/orders/20/cancel/
+2024-04-03 22:11:37,634 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:11:38,377 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:11:40,174 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:11:40,696 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:11:47,647 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:11:48,219 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:11:50,019 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:11:50,577 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:12:11,080 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:12:11,627 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:12:14,795 (WARNING)- orders.views- Tried to cancel already cancelled order: 20
+2024-04-03 22:12:14,796 (WARNING)- django.request- Bad Request: /api/v1/orders/20/cancel/
+2024-04-03 22:13:13,420 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:13:13,929 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:13:53,818 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:13:54,382 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:13:57,198 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:13:57,760 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:14:36,948 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:14:37,589 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:14:39,424 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:14:40,029 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:14:52,130 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:14:52,675 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:15:36,701 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:15:37,250 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:16:07,943 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:16:08,497 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:16:12,363 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/orders/views.py changed, reloading.
+2024-04-03 22:16:12,887 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:17:08,394 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/carts/views.py changed, reloading.
+2024-04-03 22:17:08,930 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:17:11,592 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/carts/views.py changed, reloading.
+2024-04-03 22:17:12,150 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:17:19,165 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/carts/views.py changed, reloading.
+2024-04-03 22:17:19,688 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:17:23,530 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/carts/views.py changed, reloading.
+2024-04-03 22:17:24,076 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:17:41,444 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/carts/views.py changed, reloading.
+2024-04-03 22:17:42,016 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:17:44,851 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/carts/views.py changed, reloading.
+2024-04-03 22:17:45,458 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:17:50,364 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/carts/views.py changed, reloading.
+2024-04-03 22:17:50,889 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:18:17,592 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/users/views.py changed, reloading.
+2024-04-03 22:18:18,338 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:18:30,800 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/users/views.py changed, reloading.
+2024-04-03 22:18:31,207 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:18:56,696 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:18:57,590 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:19:40,913 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:19:41,323 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:20:15,080 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:20:15,640 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:20:24,019 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:20:24,431 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:20:34,510 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:20:35,111 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:21:05,113 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:21:05,495 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:21:07,651 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:21:08,142 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:21:09,317 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:21:09,777 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:21:13,621 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:21:14,174 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:21:16,164 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:21:16,766 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:21:37,211 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:21:37,768 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:22:06,434 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:22:06,838 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:22:15,922 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:22:16,510 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:22:55,595 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:22:56,021 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:23:08,162 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:23:08,719 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:23:34,407 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:23:34,815 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:23:55,178 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:23:55,771 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:23:58,935 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:23:59,379 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:24:25,262 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:24:25,694 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:24:27,575 (INFO)- django.utils.autoreload- /home/aboda/Videos/Appgain/products/views.py changed, reloading.
+2024-04-03 22:24:28,224 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:24:46,675 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:26:09,022 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:27:18,415 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:27:31,331 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:27:40,667 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:27:49,592 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:27:50,980 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:33:52,962 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:33:54,255 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 22:38:22,795 (ERROR)- orders.views- Order with ID 19 not found
+2024-04-03 22:38:22,796 (WARNING)- django.request- Not Found: /api/v1/orders/19/
+2024-04-03 22:39:10,515 (INFO)- stripe- message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+2024-04-03 22:39:11,396 (INFO)- stripe- message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+2024-04-03 22:39:11,844 (INFO)- orders.views- Successful payment for order: 21
+2024-04-03 22:40:12,886 (WARNING)- orders.views- Attempted to pay for already paid order: 21
+2024-04-03 22:40:12,887 (WARNING)- django.request- Bad Request: /api/v1/orders/21/payment/
+2024-04-03 22:41:09,606 (ERROR)- orders.views- Attempted to cancel paid order: 21
+2024-04-03 22:41:09,606 (WARNING)- django.request- Bad Request: /api/v1/orders/21/cancel/
+2024-04-03 22:47:29,983 (ERROR)- orders.views- Attempted to cancel paid order: 21
+2024-04-03 22:47:29,984 (WARNING)- django.request- Bad Request: /api/v1/orders/21/cancel/
+2024-04-03 22:47:41,326 (WARNING)- orders.views- Attempted to pay for already paid order: 21
+2024-04-03 22:47:41,327 (WARNING)- django.request- Bad Request: /api/v1/orders/21/payment/
+2024-04-03 22:47:49,118 (INFO)- stripe- message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+2024-04-03 22:47:50,311 (INFO)- stripe- message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=400
+2024-04-03 22:47:50,312 (INFO)- stripe- error_code=parameter_invalid_integer error_message='The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents' error_param=amount error_type=invalid_request_error message='Stripe API error received'
+2024-04-03 22:47:50,313 (ERROR)- orders.views- Internal server error: Request req_59TXA9OaBm68HC: The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents
+2024-04-03 22:47:50,314 (ERROR)- django.request- Internal Server Error: /api/v1/orders/22/payment/
+2024-04-03 22:49:30,970 (INFO)- stripe- message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+2024-04-03 22:49:31,699 (INFO)- stripe- message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+2024-04-03 22:49:32,152 (INFO)- orders.views- Successful payment for order: 23
+2024-04-03 22:49:56,575 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 22:50:35,515 (INFO)- stripe- message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+2024-04-03 22:50:36,328 (INFO)- stripe- message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+2024-04-03 22:50:36,837 (INFO)- orders.views- Successful payment for order: 24
+2024-04-03 22:52:05,253 (INFO)- stripe- message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+2024-04-03 22:52:05,995 (INFO)- stripe- message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+2024-04-03 22:52:06,395 (INFO)- orders.views- Successful payment for order: 25
+2024-04-03 22:59:47,808 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+2024-04-03 23:00:04,214 (INFO)- stripe- message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+2024-04-03 23:00:05,004 (INFO)- stripe- message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=400
+2024-04-03 23:00:05,006 (INFO)- stripe- error_code=parameter_invalid_integer error_message='The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents' error_param=amount error_type=invalid_request_error message='Stripe API error received'
+2024-04-03 23:00:05,006 (ERROR)- orders.views- Internal server error: Request req_tnB3swhKYPi4OB: The amount must be greater than or equal to the minimum charge amount allowed for your account and the currency set (https://docs.stripe.com/currencies#minimum-and-maximum-charge-amounts).  If you want to save a Payment Method for future use without an immediate payment, use a Setup Intent instead: https://docs.stripe.com/payments/setup-intents
+2024-04-03 23:00:05,007 (ERROR)- django.request- Internal Server Error: /api/v1/orders/26/payment/
+2024-04-03 23:00:28,306 (INFO)- stripe- message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+2024-04-03 23:00:28,721 (INFO)- stripe- message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+2024-04-03 23:00:29,238 (INFO)- orders.views- Successful payment for order: 27
+2024-04-03 23:01:25,912 (ERROR)- orders.views- Insufficient stock for Meat
+2024-04-03 23:01:25,913 (WARNING)- django.request- Bad Request: /api/v1/orders/
+2024-04-03 23:02:00,226 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 23:02:02,803 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 23:02:10,731 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 23:02:17,291 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 23:02:22,842 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 23:02:27,656 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 23:02:31,791 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 23:02:45,403 (WARNING)- orders.views- Attempted to pay for already paid order: 27
+2024-04-03 23:02:45,404 (WARNING)- django.request- Bad Request: /api/v1/orders/27/payment/
+2024-04-03 23:02:59,470 (INFO)- stripe- message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+2024-04-03 23:03:00,328 (INFO)- stripe- message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+2024-04-03 23:03:00,776 (INFO)- orders.views- Successful payment for order: 28
+2024-04-03 23:10:46,941 (WARNING)- django.request- Not Found: /admin
+2024-04-03 23:10:47,787 (WARNING)- django.request- Not Found: /favicon.ico
+2024-04-03 23:10:48,153 (WARNING)- django.request- Not Found: /highLightTitle.png
+2024-04-03 23:10:50,378 (WARNING)- django.request- Not Found: /admin
+2024-04-03 23:10:51,020 (WARNING)- django.request- Not Found: /highLightTitle.png
+2024-04-03 23:40:16,866 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
