@@ -63,9 +63,10 @@ Note: For testing the product endpoints, you can use the following admin credent
 7. **Process Payment:**
    - Use the `/api/v1/orders/<int:pk>/payment/` endpoint to initiate the payment process using Stripe integration.
 
-```bash
-Note: Brevo removes the BREVO_API_KEY from the account, which prevents email confirmation from being sent. Therefore, email confirmation will not be sent unless a valid API key is provided.generate your own API key and update the API key in the configuration to enable email confirmation upon successful payment or you can contact me to provide a valid API key.
-```
+Note: Brevo removes the BREVO_API_KEY from the account, which prevents email confirmation from being sent. Therefore, email confirmation will not be sent unless a valid API key is provided. Generate your own API key and update the API key in the configuration to enable email confirmation upon successful payment, or you can contact me to provide a valid API key.
+
+You can follow this guide [here](https://help.brevo.com/hc/en-us/articles/209467485-Create-and-manage-your-API-keys) to create your API keys.
+
 
 
 
