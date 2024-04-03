@@ -8,7 +8,7 @@ import os
 from dotenv import load_dotenv
 import logging
 
-load_dotenv()
+# Local Import goes here!
 from .models import Order, OrderItem
 from .serializers import OrderSerializer
 from .models import Order
@@ -16,6 +16,7 @@ from .serializers import CardInformationSerializer
 from .permissions import IsOwnerOrReadOnly
 from .utils import send_order_confirmation_email
 
+load_dotenv()
 logger = logging.getLogger(__name__)
 
 
