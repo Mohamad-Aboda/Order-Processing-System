@@ -84,8 +84,8 @@ You can follow this guide [here](https://help.brevo.com/hc/en-us/articles/209467
 1. Clone the repository and move to the project directory:
 
     ```bash
-    git clone https://github.com/your-username/your-repo-name
-    cd your-repo-name
+    git clone https://github.com/Mohamad-Aboda/Order-Processing-System.git
+    cd Order-Processing-System
     ```
 ## Virtual Environment Setup
 
