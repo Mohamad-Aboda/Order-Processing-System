@@ -14,6 +14,7 @@
   - [User Endpoints](#user-endpoints)
   - [Order Endpoints](#order-endpoints)
   - [Cart Endpoints](#cart-endpoints)
+  - [Product Endpoints](#product-endpoints)
 
 ## Overview
 
@@ -25,6 +26,16 @@ Order Processing System for an online store.. It provides a RESTful API for user
 3. Users can view their orders and their cart contents.
 4. Users can make payments using Stripe integration, with email confirmation sent upon successful payment.
 5. Only admin users can create, update and delete products.
+6. Implemented logging to enhance tracking and debugging functionalities.
+7. Integrated GitHub Actions to automate the process of pushing Docker images to Docker Hub.
+
+Note: For testing the product endpoints, you can use the following admin credentials or create admin user:
+
+```bash
+    Email: admin@gmail.com
+    Password: admin
+```
+
 
 **Testing Endpoints:**
 - To test the API endpoints, you can import the [Postman collection](Order_Processing_System.postman_collection.json) provided in the repository and try the endpoints in Postman.
@@ -51,6 +62,16 @@ Order Processing System for an online store.. It provides a RESTful API for user
 
 7. **Process Payment:**
    - Use the `/api/v1/orders/<int:pk>/payment/` endpoint to initiate the payment process using Stripe integration.
+
+```bash
+Note: Brevo removes the BREVO_API_KEY from the account, which prevents email confirmation from being sent. Therefore, email confirmation will not be sent unless a valid API key is provided.generate your own API key and update the API key in the configuration to enable email confirmation upon successful payment or you can contact me to provide a valid API key.
+```
+
+
+
+
+
+
 
 8. **View Orders:**
    - Use the `/api/v1/orders/all/` endpoint to view all orders placed by the user.
@@ -199,3 +220,6 @@ Explore the API.
 | PUT    | `/api/v1/products/<int:pk>/images/<int:image_id>/` | Update an image for a product | (image)    | Authorization token  | Success message     |
 | DELETE | `/api/v1/products/<int:pk>/images/<int:image_id>/` | Delete an image from a product | -          | Authorization token  | Success message     |
 | DELETE | `/api/v1/img-products/<int:product_id>/images/delete-all/` | Delete all images from a product | -          | Authorization token  | Success message |
+
+
+

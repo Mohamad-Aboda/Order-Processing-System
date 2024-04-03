@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\n        \"email\": \"John_Doe@email.com\",\n        \"first_name\": \"John\",\n        \"last_name\": \"Doe\",\n        \"password\": \"password\"\n    }",
+							"raw": "{\n    \"email\": \"muhammeed.abdelhameed@gmail.com\",\n    \"first_name\": \"mohamed\",\n    \"last_name\": \"aboda\",\n    \"password\": \"password\"\n}\n\n\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -49,7 +49,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMjAwNzgzNywiaWF0IjoxNzExOTIxNDM3LCJqdGkiOiIzYzA2ZWE2N2NjMDQ0NzIyYTE3OWExYmM2NTMzYjc0MiIsInVzZXJfaWQiOjV9.dmjrEpIayedehufyYc_0pe0O8GK6PB9e_ZvBjMot8K4\"\n}\n",
+							"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxOTkzMTg0MywiaWF0IjoxNzEyMTU1ODQzLCJqdGkiOiIxNDhiYTI0OTYxZTk0NGFkYTY2NzJkNTRhNWY2MmFmMSIsInVzZXJfaWQiOjJ9.BcqezvT1YpLFYDG-GCM2pc3BRfBHjPfosOlb_-Qks1w\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -100,7 +100,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"John_Doe@email.com\",\n    \"password\": \"password\"\n}",
+							"raw": "{\n    \"email\": \"muhammeed.abdelhameed@gmail.com\",\n    \"password\": \"password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -132,20 +132,19 @@
 					"name": "Create Product",
 					"request": {
 						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkzOTQ3NDY2LCJpYXQiOjE2OTM5NDM4NjYsImp0aSI6IjZlZTI5YjliODg4YTQzODRhYzY5MmY4Y2FmNGJkMTE4IiwidXNlcl9pZCI6NX0.31WTIje0fpBMAFsKLW-yAkpeVOztXtenTEfuXeu7Mis",
-									"type": "string"
-								}
-							]
+							"type": "noauth"
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Light Tea drink\",\n    \"description\": \"Egyptian Light Tea created by test4\",\n    \"price\": \"10.00\",\n    \"category\": \"drinks category\"\n}",
+							"raw": "{\n    \"name\": \"Chicken\",\n    \"description\": \"chicken\",\n    \"stock\":\"25\",\n    \"price\": \"40.00\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -153,17 +152,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/products/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"products",
 								""
 							]
@@ -175,21 +170,23 @@
 					"name": "Delete Single Product",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/id/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/products/1/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"products",
-								"id",
+								"1",
 								""
 							]
 						}
@@ -200,7 +197,20 @@
 					"name": "List Single Product",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/products/2/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"2",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -208,7 +218,25 @@
 					"name": "List All Products",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/products/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -251,8 +279,36 @@
 				{
 					"name": "Partial Update Product",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"Egyptian Milk\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/products/2/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"2",
+								""
+							]
+						}
 					},
 					"response": []
 				}
@@ -265,20 +321,22 @@
 					"name": "List Cart",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/carts/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
-								"products",
+								"v1",
+								"carts",
 								""
 							]
 						}
@@ -288,22 +346,34 @@
 				{
 					"name": "Remove product from cart",
 					"request": {
-						"method": "DELETE",
-						"header": [],
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quantity\": 4\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/id/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/carts/remove/3/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
-								"products",
-								"id",
+								"v1",
+								"carts",
+								"remove",
+								"3",
 								""
 							]
 						}
@@ -326,7 +396,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"product_id\": 3,\n  \"quantity\": 1\n}\n",
+							"raw": "{\n  \"quantity\": 1\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -334,7 +404,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/v1/carts/add/",
+							"raw": "{{base_url}}/api/v1/carts/add/1/",
 							"host": [
 								"{{base_url}}"
 							],
@@ -343,6 +413,7 @@
 								"v1",
 								"carts",
 								"add",
+								"1",
 								""
 							]
 						}
@@ -367,7 +438,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user\":2\n}",
+							"raw": "{\n    \"user\":4\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -401,7 +472,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/api/v1/orders/13/cancel/",
+							"raw": "{{base_url}}/api/v1/orders/20/cancel/",
 							"host": [
 								"{{base_url}}"
 							],
@@ -409,7 +480,7 @@
 								"api",
 								"v1",
 								"orders",
-								"13",
+								"20",
 								"cancel",
 								""
 							]
@@ -432,7 +503,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/api/v1/orders/16/",
+							"raw": "{{base_url}}/api/v1/orders/21/",
 							"host": [
 								"{{base_url}}"
 							],
@@ -440,7 +511,7 @@
 								"api",
 								"v1",
 								"orders",
-								"16",
+								"21",
 								""
 							]
 						}
@@ -468,7 +539,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/v1/orders/16/payment/",
+							"raw": "{{base_url}}/api/v1/orders/21/payment/",
 							"host": [
 								"{{base_url}}"
 							],
@@ -476,7 +547,7 @@
 								"api",
 								"v1",
 								"orders",
-								"16",
+								"21",
 								"payment",
 								""
 							]
@@ -522,20 +593,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/20/images",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/products/img-products/3/images/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"products",
-								"20",
-								"images"
+								"img-products",
+								"3",
+								"images",
+								""
 							]
 						}
 					},
@@ -545,22 +614,27 @@
 					"name": "Upload Images",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "formdata",
 							"formdata": [
 								{
 									"key": "product",
-									"value": "1",
+									"value": "3",
 									"type": "text"
 								},
 								{
 									"key": "image",
 									"type": "file",
 									"src": [
-										"/home/aboda/Pictures/product.jpeg",
-										"/home/aboda/Downloads/default.png",
-										"/home/aboda/Downloads/black.png"
+										"/home/aboda/Pictures/meat2.jpeg",
+										"/home/aboda/Pictures/meat.jpeg"
 									]
 								},
 								{
@@ -578,19 +652,16 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/1/images/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/products/img-products/3/images/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"products",
-								"1",
+								"img-products",
+								"3",
 								"images",
 								""
 							]
@@ -604,21 +675,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/1/images/29/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/products/img-products/3/images/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"products",
-								"1",
+								"img-products",
+								"3",
 								"images",
-								"29",
 								""
 							]
 						}
@@ -629,21 +696,24 @@
 					"name": "Delete All Images",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/1/images/delete-all/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/products/img-products/3/images/delete-all/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"products",
-								"1",
+								"img-products",
+								"3",
 								"images",
 								"delete-all",
 								""
@@ -656,23 +726,26 @@
 					"name": "Delete Single Image",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/1/images/22/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/products/img-products/3/images/4/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"products",
-								"1",
+								"img-products",
+								"3",
 								"images",
-								"22",
+								"4",
 								""
 							]
 						}
@@ -683,38 +756,41 @@
 					"name": "Update Product Image",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "formdata",
 							"formdata": [
 								{
 									"key": "image",
 									"type": "file",
-									"src": "/home/aboda/Downloads/black.png"
+									"src": "/home/aboda/Pictures/meat2.jpeg"
 								},
 								{
 									"key": "product",
-									"value": "1",
+									"value": "4",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/1/images/29/",
-							"protocol": "http",
+							"raw": "{{base_url}}/api/v1/products/img-products/3/images/4/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"products",
-								"1",
+								"img-products",
+								"3",
 								"images",
-								"29",
+								"4",
 								""
 							]
 						}

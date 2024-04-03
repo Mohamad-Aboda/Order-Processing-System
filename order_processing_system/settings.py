@@ -142,7 +142,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': datetime.timedelta(minutes=60),
+    # 'ACCESS_TOKEN_LIFETIME': datetime.timedelta(minutes=60),
+    'ACCESS_TOKEN_LIFETIME': datetime.timedelta(days=60), # just for testing 
     'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=90),
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
@@ -172,3 +173,31 @@ SIMPLE_JWT = {
 }
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+# settings.py
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {"class": "logging.StreamHandler"},
+        "file": {
+            "class": "logging.FileHandler",
+            "filename": "general.log",
+            "formatter": "verbose",
+        },
+    },
+    "loggers": {
+        "": {
+            "handlers": ["console", "file"],
+            "level": os.environ.get("DJANGO_LOG_LEVEL", "INFO"),
+        }
+    },
+    "formatters": {
+        "verbose": {
+            "format": "{asctime} ({levelname})- {name}- {message}",
+            "style": "{",
+        }
+    },
+}
